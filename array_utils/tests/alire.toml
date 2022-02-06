@@ -1,0 +1,16 @@
+name = "tests"
+description = "array_utils unit tests"
+version = "0.0.0"
+
+authors = ["J. German Rivera"]
+maintainers = ["J. German Rivera <jgrivera67@gmail.com>"]
+maintainers-logins = ["jgrivera67"]
+
+executables = ["tests"]
+
+[[depends-on]]
+array_utils = "*"
+aunit = "*"
+
+[[pins]]
+array_utils = { path = ".." }  # Overridden by the latest sources
