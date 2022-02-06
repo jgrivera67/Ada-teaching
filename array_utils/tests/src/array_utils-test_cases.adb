@@ -32,4 +32,6 @@ package body Array_Utils.Test_Cases is
                                "Entry should not have been found");
    end Test_Linear_Search_Element_Not_Found;
 
+   --  TODO: Add unit tests for Binary_Search
+
 end Array_Utils.Test_Cases;

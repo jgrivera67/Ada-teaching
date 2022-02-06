@@ -29,6 +29,8 @@ package body Test_Suite is
            "Test_Linear_Search_Element_Not_Found",
            Array_Utils.Test_Cases.Test_Linear_Search_Element_Not_Found'Access));
 
+      --  TODO: Add unit tests for Binary_Search
+
       return Test_Suite_Ptr;
    end Create_Test_Suite;
 

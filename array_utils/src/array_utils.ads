@@ -25,15 +25,27 @@
 --  POSSIBILITY OF SUCH DAMAGE.
 --
 package Array_Utils is
-   subtype Element_type is Integer;
+
+   -- TODO: Change this package to a generic package that takes  Elment_Type as
+   -- a parameter
+   subtype Element_Type is Integer;
 
    type Array_Type is array (Positive range <>) of Element_Type;
 
    --
    --  Search a given value in an array and returns the index of the array where
+   --  the value was first found, or 0 if the value was not found in the array.
+   --  This function uses the linear search algorithm.
+   --
+   function Linear_Search (A : Array_Type; Value : Element_Type) return Natural;
+
+   --
+   --  Search a given value in an array and returns the index of the array where
    --  the value was found, or 0 if the value was not found in the array.
+   --  This function uses the binary search algorithm.
    --
    --  Precondition: The array is sorted in ascending order and it has no duplicates
    --
-   function Linear_Search (A : Array_Type; Value : Element_Type) return Natural;
+   function Binary_Search (A : Array_Type; Value : Element_Type) return Natural;
+
 end Array_Utils;

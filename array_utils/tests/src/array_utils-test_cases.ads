@@ -13,4 +13,6 @@ package Array_Utils.Test_Cases is
 
    procedure Test_Linear_Search_Element_Not_Found (T : in out Test_Case);
 
+   --  TODO: Add unit tests for Binary_Search
+
 end Array_Utils.Test_Cases;

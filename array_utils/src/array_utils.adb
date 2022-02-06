@@ -38,4 +38,10 @@ package body Array_Utils is
       return 0;
    end Linear_Search;
 
+   function Binary_Search (A : Array_Type; Value : Element_Type) return Natural is
+   begin
+      --  TODO: Implement the binary search algorithm
+      return 0;
+   end Binary_Search;
+
 end Array_Utils;
