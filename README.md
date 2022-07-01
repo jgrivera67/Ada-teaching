@@ -1,1 +1,1 @@
-# projects-with-amy
+# ada-teaching
